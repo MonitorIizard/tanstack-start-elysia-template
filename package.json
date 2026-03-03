@@ -1,0 +1,25 @@
+{
+  "name": "factory-management",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "buf:gen": "cd apps/proto && buf generate",
+    "dev": "dotenv -- bun --filter \"*\" dev",
+    "lint": "bun --filter \"*\" lint",
+    "api:gen": "dotenv -- bun --filter web api:gen",
+    "clear": "rm -rf node_modules apps/**/node_modules",
+    "format": "bun --filter \"*\" format"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^9.2.1",
+    "dotenv-cli": "^11.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}

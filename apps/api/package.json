@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "lint": "bunx eslint",
+    "format": "bunx prettier . --write"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.4.1",
+    "@elysiajs/openapi": "^1.4.14",
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "bun-types": "latest",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.4.0",
+    "jiti": "^2.6.1",
+    "prettier": "3.8.1",
+    "typescript-eslint": "^8.56.1"
+  },
+  "module": "src/index.js"
+}
